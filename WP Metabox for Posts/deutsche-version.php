@@ -1,12 +1,12 @@
 <?php // DIESE ZEILE NICHT MIT EINFÜGEN!
 /**
- * Benutzerdefiniertes Feld für "DEIN_NAME" zu einem Post.
+ * Benutzerdefiniertes Feld für "DIESEN_TITEL_ERSETZEN'" zu einem Post.
  */
 function hm_eigene_metabox_posts()
 {
     add_meta_box(
         'hm_deine_meta_box',
-        __('DIESEN TITEL ERSETZEN', 'textdomain'), // Ersetze 'textdomain' durch die Textdomain deines (Child-)Themes (Die "Text Domain" steht in der styles.css)
+        __('DIESEN_TITEL_ERSETZEN', 'textdomain'), // Ersetze 'textdomain' durch die Textdomain deines (Child-)Themes (Die "Text Domain" steht in der styles.css)
         'hm_deine_meta_box_render',
         'post',
         'normal',

@@ -1,12 +1,12 @@
 <?php //DO NOT COPY THIS LINE INTO YOUR functions.php
 /**
- * Own metafield "YOUR_NAME" for posts.
+ * Own metafield "REPLACE_THIS_TITLE" for posts.
  */
 function hm_own_metabox_posts()
 {
     add_meta_box(
         'hm_your_meta_box',
-        __('PLEASE REPLACE THIS TITLE', 'textdomain'), // Replace textdomain with "Text Domain" of your Child-Theme (located in styles.css)
+        __('REPLACE_THIS_TITLE', 'textdomain'), // Replace textdomain with "Text Domain" of your Child-Theme (located in styles.css)
         'hm_your_meta_box_render',
         'post',
         'normal',
