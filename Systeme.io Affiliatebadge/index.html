@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+       <html lang="de">
+         <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <link rel="stylesheet" href="style.css">   
+         </head>
+         <body>
+            <div id="herbslebmedia-affibanner" style="position: fixed; bottom: 10px; right: 10px; background-color: #333; border-radius: 20px; padding: 8px 8px; box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3); width: 120px; height: 22px; display: flex; justify-content: center; align-items: center; white-space: nowrap;">
+                <a href="https://hmlink.de/systemeio" style="text-decoration: none; display: block; width: 100%; height: 100%; text-align: center;">
+                    <span id="dynamic-text" style="color: white; font-size: 10px; font-weight: bold; display: block;">Kostenlose Webseite</span>
+                    <span style="color: white; font-size: 8px; font-weight: normal; display: block;">Kostenlos einrichten!</span>
+                </a>
+            </div>
+            <script>
+                // Array mit den verschiedenen Begriffen
+                const terms = ["Kostenlose Webseite", "Kostenloser Funnel", "Kostenloser Newsletter", "Kostenloser Blog", "Kostenloses Webinar"];
+                let currentTermIndex = 0;
+                function changeText() {
+                    const dynamicTextElement = document.getElementById("dynamic-text");
+                    dynamicTextElement.textContent = terms[currentTermIndex];
+                    currentTermIndex = (currentTermIndex + 1) % terms.length;
+                }
+                // Text wechseln alle 1200 ms
+                setInterval(changeText, 1200);
+            </script>
+         </body>
+      </html>
