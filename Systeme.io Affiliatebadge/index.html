@@ -6,6 +6,11 @@
            <link rel="stylesheet" href="style.css">   
          </head>
          <body>
+
+            <style>.AffiliateBadgeUi-wzepun-0.bjLeTS {
+                display: none;
+            }</style>
+            <!-- Affiliate-Banner-Anpasungen START -->
             <div id="herbslebmedia-affibanner" style="position: fixed; bottom: 10px; right: 10px; background-color: #333; border-radius: 20px; padding: 6px 8px 6px 8px; box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3); width: 140px; height: 37px; display: flex; justify-content: center; align-items: center; white-space: nowrap;">
                 <a href="https://hmlink.de/systemeio" style="text-decoration: none; display: block; width: 100%; height: 100%; text-align: center;">
                     <span id="dynamic-text" style="color: white; font-size: 10px; font-weight: bold; display: block; margin-bottom: -2px;">Kostenlose Webseite</span>
@@ -22,8 +27,10 @@
                     dynamicTextElement.textContent = terms[currentTermIndex];
                     currentTermIndex = (currentTermIndex + 1) % terms.length;
                 }
-                // Text wechseln alle 1600 ms
-                setInterval(changeText, 1600);
+                // Text wechseln alle 1200 ms
+                setInterval(changeText, 1200);
             </script>
+            <!-- Affiliate-Banner-Anpasungen ENDE -->
+
          </body>
       </html>
